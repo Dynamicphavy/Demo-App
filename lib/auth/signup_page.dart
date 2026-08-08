@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:demoapp/auth/login_page.dart';
-import 'package:demoapp/pages/sam_page.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
@@ -57,11 +56,7 @@ class SignupPage extends StatelessWidget {
                   height: 58,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: (BuildContext context) {
-                          return SamPage();
-                        })
-                      );
+                      Navigator.pushNamed(context, '/firstpage');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,

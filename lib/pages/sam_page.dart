@@ -23,6 +23,7 @@ class _SamPageState extends State<SamPage> {
         backgroundColor: Colors.green,
         foregroundColor: Colors.white,
         title: Text('Flutter'),
+        elevation: 0,
       ),
       body: pages[currentPage],
       floatingActionButton: FloatingActionButton(
